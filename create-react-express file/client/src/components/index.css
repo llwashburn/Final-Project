@@ -1,0 +1,227 @@
+/* Home */
+
+.background {
+  background-image: url("./images/spirit.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+
+/* -------NavBar---------- */
+
+a.navbar-header {
+    font-size: 23px;
+    font-family: sans-serif;
+    padding: 15px 10px 15px 15px;
+}
+
+.navbar.navbar-inverse {
+    background-color: white;
+    border-color: white;
+    vertical-align: baseline;
+}
+
+nav.navbar.navbar-light {
+    vertical-align: baseline;
+    color: #666;
+}
+
+a.active {
+    font-size: 25px;
+    line-height: 30px;
+    font-family: sans-serif;
+}
+
+a {
+    color: #666;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 18px;
+    padding: 15px 15px;
+}
+
+
+
+
+.fa {
+    font-size: 20px;
+}
+
+
+
+
+/* -------Footer---------- */
+
+.footer {
+    bottom: 0;
+    margin: 0 auto !important;
+    text-align: center !important;
+    padding: 3%;
+    width: 100% !important;
+    height: 20px;
+    position: absolute;
+    /* background-color: #56dae4; */
+}
+
+ul.nav.navbar-nav {
+    margin-left: 20%;
+    
+}
+
+/* span.text {
+    color: #666;
+} */
+
+
+
+
+
+/* -------Contact Form---------- */
+
+button {
+    background-color: #56dae4;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 15px;
+    color: white;
+    margin-top: 2%;
+}
+
+form {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding: 8px;
+    /* border: 1px solid #ccc; */
+    /* border-radius: 4px; */
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input {
+    padding: 8px;
+    /* border-radius: 2px; */
+    cursor: pointer;
+    height: 40px;
+    width: 50%;
+}
+
+input:hover {
+    background-color: #aaa;
+}
+
+input.message {
+    padding: 0%;
+    height: 150px;
+    font-family: sans-serif;
+}
+
+h2 {
+    color: #666;
+    font-family: sans-serif;
+    font: italic;
+}
+
+p {
+    font-family: sans-serif;
+    color: #666;
+}
+
+div.signature {
+    font-family: cursive;
+    font-size: 25px;
+    font-weight: bold;
+    color: #666;
+}
+
+form.form {
+    float: right;
+}
+
+
+
+
+/* -------Jumbotron --------*/
+
+.jumbotron {
+    margin-top: 0%;
+    /* background-image: url(../components/images/jumborunner.jpg); */
+    height: 375px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+h1.display-3 {
+    font: white;
+}
+
+p.lead {
+    font: teal;
+}
+
+div.welcome.col-xs-12 {
+    display: inline-block;
+    padding: 10px;
+    font-weight: 400;
+}
+
+p {
+    line-height: 1.5;
+}
+
+
+/* contact */
+
+.form {
+    margin: 20px;
+}
+
+.form input {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+
+/* login */
+@media all and (min-width: 480px) {
+    .Login {
+        padding: 60px 0;
+        
+        
+    }
+    .Login form {
+        margin: 0 auto;
+        max-width: 350px;
+        height: 350px;
+        background: lightgrey;
+        
+    }
+}
+
+/* Testimonial */
+
+div.page-header{
+    
+    width: 75%;
+    margin-left: 15%;
+
+}
+
+
+li.list-group-item{
+    background-color: gray;
+    align-content: center;
+    padding: 20px 20px 30px 30px;
+   
+    
+}
