@@ -10,21 +10,7 @@ class Form extends Component {
     message: ""
   };
 
-  // componentDidMount() {
-  //   this.loadForm();
-  // }
-
-  // loadForm = () => {
-  //   API.getForm()
-  //     .then(res => this.setState({form: res.data, 
-  //         name: "",
-  //         email: "",
-  //         subject: "",
-  //         message: ""
-  //     })
-  //   )
-  //     .catch(err => console.log(err));
-  // };
+  
 
   handleInputChange = event => {
     // Getting the value and name of the input which triggered the change
@@ -63,31 +49,36 @@ class Form extends Component {
           onChange={this.handleInputChange}
           name = "name"
           type="text"
-          placeholder="Name"
+          placeholder="NAME"
         />
+        <br/>
         <FormControl input
           value={this.state.email}
           onChange={this.handleInputChange}
           name = "email"
           type="text"
-          placeholder="Email"
+          placeholder="EMAIL"
         />
+        <br/>
         <FormControl input
           value={this.state.subject}
           onChange={this.handleInputChange}
           name = "subject"
           type="text"
-          placeholder="Subject"
+          placeholder="SUBJECT"
         />
-        <FormControl input
+        <br/>
+        <FormControl input 
+        div id="message"
           value={this.state.message}
           onChange={this.handleInputChange}
           name = "message"
           type="text"
-          placeholder="Message"
+          placeholder="MESSAGE"
         />
-
-        <Button bsStyle="primary" onClick={this.handleFormSubmit}>Submit</Button>
+<br/>
+        <Button bsStyle="primary large center" onClick={this.handleFormSubmit}>SUBMIT</Button>
+       
         </FormGroup>
       </form>
     </div>;

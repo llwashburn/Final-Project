@@ -1,4 +1,4 @@
-/* Home */
+/* -------HOME--------- */
 #welcome {
  font-family: 'Rock Salt',
     cursive;
@@ -17,35 +17,46 @@ div.Jumbtron{
   height: 100%;
   width: 100%;
 }
-/* -------Jumbotron---------- */
+
+
+/* -------ABOUT---------- */
+
+hr.row.featurette-divider{
+    height: 1.5pt;
+}
+
+/* -------JUMBOTRON---------- */
 div.Jumbtron {
     opacity: 0.6;
     height: 5px;
 }
 
 
-/* -------NavBar---------- */
+/* -------NAVBAR---------- */
 
 
-nav.navbar-light.container-fluid {
-   margin-left: 22%;
-}
 a.navbar-header {
-    
+  font-family: 'Rock Salt',
+  cursive;
     font-size: 23px;
-    font-family: sans-serif;
-    padding: 15px 10px 15px 15px;
+    padding: 35px 15px 15px 15px;
+   
     
+}
+
+ul.nav.navbar-nav{
+    padding: 10px 10px 15px 15px;
+    float: right;
+    margin-right: 5%;
 }
 a.active {
-
+    
     font-size: 25px;
     line-height: 30px;
     font-family: sans-serif;
 }
 
 a {
-    
     color: #666;
     font-weight: 500;
     text-transform: uppercase;
@@ -61,163 +72,264 @@ a {
 
 
 
-/* -------Footer---------- */
+/* -------FOOTER---------- */
 
 .footer {
   
     margin: 0 auto !important;
     text-align: center !important;
-    padding: 1px 5px 8px 8px;
-    
-    
     width: 100% !important;
- 
-  
- 
-    
+    font-family: 'Rock Salt',
+    cursive;
 }
-
-
+#footer{
+    margin-bottom: 30px;
+}
 /* span.text {
     color: #666;
 } */
 
-
-
-
-
-/* -------Contact Form---------- */
-
-
-.form {
-   background: yellow;
-    width:75%;
-    height: 100%;
-    padding: 10%;
-    border: 2px solid #ccc;
-    }
-
-button.btn.btn-primary {
-    background-color: #56dae4;
-    border-radius: 20px;
-    padding: 15px;
-    font-size: 15px;
-    color: white;
-    margin-top: 2%;
+i#social{
+    padding: 30px 10px 10px 10px;
 }
 
 
+
+/* -------CONTACT FORM---------- */
+div.row.featurette.contact{
+ text-align: left;
+}
+
+form.form {
+    margin-left: 10%;
+    width:75%;
+    height: 50%;
+    border: 2px solid #ccc;
+    padding: 2%;
+    }
+    
+
 input {
-   color: white;
+   font-family: "Open Sans", sans-serif;
    padding: 12px 20px;
    border: none;
    border-radius: 4px;
    cursor: pointer;
    }
 
-
 input:hover {
     background-color: #aaa;
 }
 
-input.message {
-    padding: 0%;
+input#message.form-control {
     height: 150px;
-    font-family: sans-serif;
+    
 }
 
-h2 {
-    color: #666;
-    font-family: sans-serif;
-    font: italic;
+::-webkit-input-placeholder {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #d0cdfa;
+    text-align: center;
+    font-weight: lighter;
 }
 
-p {
-    font-family: sans-serif;
-    color: #666;
+div#signature{
+    font-family: 'Rock Salt',
+    cursive;
+    margin-left: 2%;
+    line-height: 3.pt;
+}
+/* -------LOGIN FORM---------- */
+
+input.form-control{
+    width: 95%;
 }
 
-div.signature {
-    font-family: cursive;
-    font-size: 25px;
-    font-weight: bold;
-    color: #666;
+div.modal-header{
+  background: lightgray;   
 }
 
-form.form {
-    float: right;
+div.modal-content {
+   background: lightgray;
+    margin-top: 20%;
 }
-
-
-
-
-/* -------Jumbotron --------*/
-
-.jumbotron {
-    margin-top: 0%;
-    /* background-image: url(../components/images/jumborunner.jpg); */
-    height: 375px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-}
-
-h1.display-3 {
-    font: white;
-}
-
-p.lead {
-    font: teal;
-}
-
-div.welcome.col-xs-12 {
-    display: inline-block;
-    padding: 10px;
-    font-weight: 400;
-}
-
-p {
-    line-height: 1.5;
+div.static.modal{
+    margin-top: 20%;
 }
 
 
-/* contact */
-
-
-
-/* login */
-@media all and (min-width: 480px) {
-    .Login {
-        padding: 60px 0;
-        
-    }
-    .Login form {
-        margin: 0 auto;
-        max-width: 350px;
-        height: 350px;
-        background: lightgrey;
-    }
+/* -------HELPBLOCK---------- */
+span.help-block{
+    font-family: 'Rock Salt',
+    cursive;
+    
 }
 
-/* Testimonial */
+
+/* -------BUTTON---------- */
+
+button.btn.btn-primary{
+    background: #ae0001;
+}
+
+button.btn.btn-large{
+     background: #ae0001;
+}
+/* -------TESTIMONIAL---------- */
 
 div.page-header{
-    
     width: 75%;
     margin-left: 15%;
-
 }
 
 
 li.list-group-item{
-    background-color: gray;
     align-content: center;
     padding: 20px 20px 30px 30px;
-   
-    
 }
 
 
 div.testimonial {
     padding: 1% 15%;
+}
+
+.panel >.panel-heading {
+    background-image: none;
+    background-color: #e8bf28;
+    color: white;
+    font-family: 'Rock Salt';
+}
+
+/* PERSONAL WEBSITE CSS */
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+#brand-pic {
+	margin-top: 5px;
+	height: 40px;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 675px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 675px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 675px;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#about-pic{
+	margin: 0 auto;
+}
+
+.new-background{
+	color: white;
+	background-color: #e8bf28;
+}
+
+.picture-padding{
+	margin: 50px 0;
+}
+
+.margin-center{
+	margin-top: 120px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+}
+
+.grey-background{
+	background-color: #222;
+	color: white;
+}
+
+#footer{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#footer a{
+	color: white;
 }

@@ -1,9 +1,6 @@
-import React, {Component} from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import Auth from "../utils/Auth";
-// import Navbar from "../components/Navbar.js";
-// import Footer from "../components/Footer.js";
-// import {PageHeader} from "react-bootstrap";
 import LoginForm from "../components/LoginForm.js";
 import API from "../utils/API";
 

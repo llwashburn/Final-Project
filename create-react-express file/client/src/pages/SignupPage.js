@@ -1,7 +1,12 @@
-import React from 'react';
+
+import React, {
+    Component
+} from "react";
 import PropTypes from 'prop-types';
 import SignUpForm from '../components/SignUpForm.js';
+import Navbar from "../components/Navbar.js";
 import API from '../utils/API';
+
 
 class SignUpPage extends React.Component {
     // set the initial component state
