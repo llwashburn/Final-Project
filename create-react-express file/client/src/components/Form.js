@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import API from "../utils/API";
 import "./index.css";
-
+import {Button, FormGroup, FormControl} from "react-bootstrap";
 class Form extends Component {
   state = {
     name: "",
@@ -57,28 +57,29 @@ class Form extends Component {
     return  <div>
       {/* <p>Contact form {this.state.name}</p> */}
       <form className="form">
-        <input
+      <FormGroup>
+        <FormControl input
           value={this.state.name}
           onChange={this.handleInputChange}
           name = "name"
           type="text"
           placeholder="Name"
         />
-        <input
+        <FormControl input
           value={this.state.email}
           onChange={this.handleInputChange}
           name = "email"
           type="text"
           placeholder="Email"
         />
-        <input
+        <FormControl input
           value={this.state.subject}
           onChange={this.handleInputChange}
           name = "subject"
           type="text"
           placeholder="Subject"
         />
-        <input
+        <FormControl input
           value={this.state.message}
           onChange={this.handleInputChange}
           name = "message"
@@ -86,7 +87,8 @@ class Form extends Component {
           placeholder="Message"
         />
 
-        <button onClick={this.handleFormSubmit}>Submit</button>
+        <Button bsStyle="primary" onClick={this.handleFormSubmit}>Submit</Button>
+        </FormGroup>
       </form>
     </div>;
   }

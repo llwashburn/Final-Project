@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "../components/Navbar.js";
 import Footer from "../components/Footer.js";
-import { Grid, ListGroup, ListGroupItem, PageHeader } from "react-bootstrap";
+import { Panel, PageHeader } from "react-bootstrap";
 import "../index.css";
 
 
@@ -11,20 +11,18 @@ class Testimonial extends React.Component {
     return (
     
     <div>
+  
         <Navbar />
-        <Grid/>
+        
           <PageHeader>
             <h2>Client Love</h2>
           </PageHeader>
           
-       
-          <ListGroup>
+         <div className="testimonial">
+         <Panel>
 
-          <ListGroupItem>
-              <h4>Good Look at lifestyle</h4>
-            <h4 className="testimonial pb-3 md-4 font-italic border-bottom">
-            </h4>
-              <p>
+          <Panel.Heading>Good Look at Lifestyle</Panel.Heading>
+            <Panel.Body>
                 It’s amazing how working with a trainer has improved my
                 attitude towards fitness and clears my mind to think
                 creatively. I was someone that used to need to be “tricked
@@ -40,55 +38,51 @@ class Testimonial extends React.Component {
                 and selfless at times. Elizabeth focuses on future and
                 growth and she is supportive, encouraging and full of warmth
                 and vitality. -- Sam M.
-              </p>
-            </ListGroupItem>
+                </Panel.Body>
+              
             
             
             
-            <ListGroupItem>
-          <div className="row">
-            <h4 className=" testimonial pb-3 md-4 font-italic border-bottom">
-              A New Woman
-            </h4>
-              <p>
+            
+            <Panel.Heading>A New Healthier Me</Panel.Heading>
+          <Panel.Body>
                 "I was introduced to Isagenix years ago and have been so inspired by others success stories 
                 that I finally started MY own journey in February of this year. I am thankful for God's timing 
                 because I have made some lifelong friends that share the same nutrition and fitness goals. 
                 I have lost 10 pounds and 20 total body inches in just two months! I have learned so much 
                 about the importance of nutritional cleansing and have definitely noticed the benefits of 
                 flooding my body with good nutrition!" - Cody Daniel
-              </p>
-          </div>
-          </ListGroupItem>
+             </Panel.Body>
           
           
 
-          <ListGroupItem>
-          <div className="row">
-            <h3 className="testimonial pb-3 md-4 font-italic border-bottom">
-              Testimonal 3
-            </h3>
-              <p>
-                It’s amazing how working with a trainer has improved my
-                attitude towards fitness and clears my mind to think
-                creatively. I was someone that used to need to be “tricked
-                into” exercise. Elizabeth Ricks has created an exercise
-                program class that fits my lifestyle (as well as many
-                others). Elizabeth has a subtle approach to motivating
-              </p>
-              </div>
+          <Panel.Heading>Fuel 4EVER</Panel.Heading>
+          <Panel.Body>
+            Fuel4Life and Isagenix has changed my life and my perspective on health for the better.
+            Total transformation for me. I've lost inches in my waistline, I have more energy, my bloodpressure and cholestrol is at it's healthy best. 
+            Thank you Elizabeth Ricks! I look forward to continuing my journey. -Suzie Jones
+             </Panel.Body>
+
+             <Panel.Heading>Cleaner Health</Panel.Heading>
+             <Panel.Body>
+                The IsaBody Challenge is all about the transformation not just the weight loss. I committed to adding nutritional cleansing 
+                to my lifestyle and cannot be more pleased with the results. Do it for your health! Join Fuel 4 Life today. 
+                -Lori Dixon
+             </Panel.Body>
                
-               
-              </ListGroupItem>
-            </ListGroup>
-            
-       
+      </Panel>
       
+
+</div>
+</div>
+
+                );
+        <div>
         <Footer/>
+        </div>
         
-       
-      </div>
-    );
+   
+    
   }
 }
 

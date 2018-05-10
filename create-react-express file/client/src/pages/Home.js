@@ -6,8 +6,6 @@ import Row from "../components/Row";
 import Col from "../components/Col";
 import Navbar from "../components/Navbar.js";
 import Footer from "../components/Footer.js";
-// import FitnessProgram from "../pages/FitnessProgram";
-// import Schedule from "../pages/Schedule";
 
 
 
@@ -15,13 +13,15 @@ import Footer from "../components/Footer.js";
 const Home = () => (
     <div>
       <Navbar/>
-      < Hero backgroundImage = "https://images.pexels.com/photos/40751/running-runner-long-distance-fitness-40751.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350" >
-        <h1>Welcome to Fuel 4 Life!</h1>
+      < Hero backgroundImage = "https://thumbs.dreamstime.com/b/dumbbells-healthy-food-fitness-dieting-concept-free-copy-space-65607197.jpg" >
+        
+        <h1 id="welcome">Fuel 4 Life!</h1>
+        <h2 id="welcome">Start your journey</h2>
+      
         </Hero>
         <Container style={{ marginTop: 30 }}>
         <Row>
           <Col size="md-12">
-          <h1></h1>
           </Col>
           </Row>
           <Row>

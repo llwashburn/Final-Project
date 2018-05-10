@@ -3,10 +3,8 @@ import { Link, Route } from "react-router-dom";
 import Navbar from "../components/Navbar.js";
 import Footer from "../components/Footer.js";
 import {Carousel} from "react-bootstrap";
-// import Schedule from "./Schedule.js";
-// import Payment from "./Payment.js";
-// import Footer from "../components/Footer.js";
-import FitnessProgram from "./FitnessProgram.js"
+
+
 
 
 
@@ -47,7 +45,7 @@ class Fitness extends Component {
           </p>
 
 <div>
-<FitnessProgram/>
+
 </div>
 </div>
 <Footer/>

@@ -5,15 +5,16 @@ import "./index.css";
 
 const Navbar = props => (
   
-       <nav className="navbar navbar-light">
-            <div className="container-fluid">
-              <div className="container">
-                
-                
-                {/* <Link className="navbar-header" to="/">
-                Fuel 4 Life
-                </Link> */}
+  
+       <nav className="navbar navbar-light container-fluid">
 
+       
+                  
+                  
+                  <Link className = "navbar-header"
+                    to ="/">Fuel 4 Life </Link>
+                
+                
                 <ul className="nav navbar-nav">
                   <li className={window.location.pathname === "/about" ? "active" : ""}>
                     <Link to="/about">About</Link>
@@ -25,11 +26,7 @@ const Navbar = props => (
 
                   <li className={window.location.pathname === "/health" ? "active" : ""}>
                     <Link to="/health">Health</Link>
-                  </li>
-
-
-<                   Link className = "navbar-header"
-                    to = "/" >Fuel 4 Life </Link>
+                  </li>             
 
                   <li className={window.location.pathname === "/contact" ? "active" : ""}>
                     <Link to="/contact">Contact</Link>
@@ -56,8 +53,7 @@ const Navbar = props => (
                     <a href="https://www.pinterest.com/isagenix" className="fa fa-pinterest" aria-hidden="true"></a>
                   </li> */}
                 </ul>
-              </div>
-            </div>
+              
           </nav>
     
 )
