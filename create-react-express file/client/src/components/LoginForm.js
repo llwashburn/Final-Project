@@ -1,9 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import {Link} from "react-router-dom";
-import { Button, FormGroup, FormControl} from "react-bootstrap";
+import { Button, Modal,FormGroup, FormControl} from "react-bootstrap";
 import "./index.css";
-
 
 
 const LoginForm = ({
@@ -14,15 +13,22 @@ const LoginForm = ({
     user,
     toggleAuthenicateStatus
 }) => (
-<FormGroup className="container">
-<form action="/" onSubmit={onSubmit}>
-<h2 className ="card-title">Login</h2>
 
-{successMessage && <p className="success-message">{successMessage}</p>}
-{errors.summary && <p className ="error-message">{errors.summary}</p>}
-       
-       
-<div className ="field-line">
+
+<div className="static-modal">
+<Modal.Dialog>
+    <Modal.Header>
+        <Modal.Title>Login</Modal.Title>
+    </Modal.Header>
+
+
+<Modal.Body>
+<FormGroup>
+    <form action = "/"onSubmit = {onSubmit}>
+    {successMessage && < p className = "success-message" > {successMessage} </p>} 
+    {errors.summary && < p className = "error-message" > {errors.summary} </p>}
+
+<div className="field-line">
 <FormControl
 placeholder="Email"
 name="email"
@@ -42,17 +48,19 @@ value = {user.password}
 /> 
 </div>
 
-
-<div className="button">
-<Button type="submit" label= "Login" primary ="true"/>
-</div>
-
-<div>Don't have an account? <Link to={"/signup"}>Create one</Link></div>
 </form>
 </FormGroup>
+</Modal.Body>
+
+<Modal.Footer>
+<Button>CLOSE</Button>
+<Button bsStyle="large">LOGIN</Button>
+</Modal.Footer>
+</Modal.Dialog>
+</div>
+
 );
 
-    
 
 LoginForm.propTypes= {
     onSubmit: PropTypes.func.isRequired,

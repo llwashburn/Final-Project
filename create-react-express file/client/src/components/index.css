@@ -1,49 +1,58 @@
 /* Home */
+#welcome {
+ font-family: 'Rock Salt',
+    cursive;
+   
+}
+
+div.Jumbtron{
+   opacity: 0.6;
+}
 
 .background {
-  background-image: url("./images/spirit.jpg");
+  
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 100%;
   width: 100%;
 }
+/* -------Jumbotron---------- */
+div.Jumbtron {
+    opacity: 0.6;
+    height: 5px;
+}
 
 
 /* -------NavBar---------- */
 
+
+nav.navbar-light.container-fluid {
+   margin-left: 22%;
+}
 a.navbar-header {
+    
     font-size: 23px;
     font-family: sans-serif;
     padding: 15px 10px 15px 15px;
+    
 }
-
-.navbar.navbar-inverse {
-    background-color: white;
-    border-color: white;
-    vertical-align: baseline;
-}
-
-nav.navbar.navbar-light {
-    vertical-align: baseline;
-    color: #666;
-}
-
 a.active {
+
     font-size: 25px;
     line-height: 30px;
     font-family: sans-serif;
 }
 
 a {
+    
     color: #666;
     font-weight: 500;
     text-transform: uppercase;
-    line-height: 18px;
-    padding: 15px 15px;
+    line-height: 10px;
+    text-align: center;
+  
 }
-
-
 
 
 .fa {
@@ -52,24 +61,22 @@ a {
 
 
 
-
 /* -------Footer---------- */
 
 .footer {
-    bottom: 0;
+  
     margin: 0 auto !important;
     text-align: center !important;
-    padding: 3%;
+    padding: 1px 5px 8px 8px;
+    
+    
     width: 100% !important;
-    height: 20px;
-    position: absolute;
-    /* background-color: #56dae4; */
-}
-
-ul.nav.navbar-nav {
-    margin-left: 20%;
+ 
+  
+ 
     
 }
+
 
 /* span.text {
     color: #666;
@@ -81,7 +88,16 @@ ul.nav.navbar-nav {
 
 /* -------Contact Form---------- */
 
-button {
+
+.form {
+   background: yellow;
+    width:75%;
+    height: 100%;
+    padding: 10%;
+    border: 2px solid #ccc;
+    }
+
+button.btn.btn-primary {
     background-color: #56dae4;
     border-radius: 20px;
     padding: 15px;
@@ -90,28 +106,15 @@ button {
     margin-top: 2%;
 }
 
-form {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    padding: 8px;
-    /* border: 1px solid #ccc; */
-    /* border-radius: 4px; */
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
 
 input {
-    padding: 8px;
-    /* border-radius: 2px; */
-    cursor: pointer;
-    height: 40px;
-    width: 50%;
-}
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   }
+
 
 input:hover {
     background-color: #aaa;
@@ -180,16 +183,6 @@ p {
 
 /* contact */
 
-.form {
-    margin: 20px;
-}
-
-.form input {
-    display: block;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 100%;
-}
 
 
 /* login */
@@ -197,14 +190,12 @@ p {
     .Login {
         padding: 60px 0;
         
-        
     }
     .Login form {
         margin: 0 auto;
         max-width: 350px;
         height: 350px;
         background: lightgrey;
-        
     }
 }
 
@@ -224,4 +215,9 @@ li.list-group-item{
     padding: 20px 20px 30px 30px;
    
     
+}
+
+
+div.testimonial {
+    padding: 1% 15%;
 }
