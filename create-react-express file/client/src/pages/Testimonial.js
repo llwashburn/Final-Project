@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "../components/Navbar.js";
 import Footer from "../components/Footer.js";
-import { Panel, PageHeader } from "react-bootstrap";
+import { Panel, } from "react-bootstrap";
 import "../index.css";
 
 
@@ -13,11 +13,10 @@ class Testimonial extends React.Component {
     <div>
   
         <Navbar />
-        
-          <PageHeader>
-            <h2>Client Love</h2>
-          </PageHeader>
-          
+        <div className = "container" >
+          <div className = "row featurette" >
+          <hr className = "row featurette-divider"/>
+         <h2 className = "featurette-heading" >Client Love</h2>
          <div className="testimonial">
          <Panel>
 
@@ -39,9 +38,6 @@ class Testimonial extends React.Component {
                 growth and she is supportive, encouraging and full of warmth
                 and vitality. -- Sam M.
                 </Panel.Body>
-              
-            
-            
             
             
             <Panel.Heading>A New Healthier Me</Panel.Heading>
@@ -75,6 +71,9 @@ class Testimonial extends React.Component {
 
 </div>
 </div>
+</div>
+</div>
+
 
                 );
         <div>

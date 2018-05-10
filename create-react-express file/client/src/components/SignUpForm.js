@@ -1,7 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
-import { Modal, Form, Button, FormGroup, FormControl, HelpBlock} from "react-bootstrap";
+import { Modal, Button, FormGroup, FormControl, HelpBlock} from "react-bootstrap";
+import Navbar from "../components/Navbar.js";
 import "./index.css";
 
 
@@ -12,10 +13,13 @@ const SignUpForm = ({
     user,
 }) => (
 
+<div>
+    <Navbar/>
+
 <div className="static-modal">
 <Modal.Dialog>
 <Modal.Header>
-<Modal.Title>Create a new Account</Modal.Title>
+<Modal.Title>CREATE A NEW ACCOUNT</Modal.Title>
 </Modal.Header>
 
 
@@ -26,7 +30,7 @@ const SignUpForm = ({
 {errors.summary && <p className="error-message">{errors.summary}</p>}
 <div className="field-line">
 <FormControl
-placeholder="Name"
+placeholder="NAME"
 type="name"
 name="name"
 errortext={errors.name}
@@ -34,10 +38,10 @@ onChange={onChange}
 value={user.name}
 />
 </div>
-
+<br/>
 <div className="field-line">
 <FormControl
-placeholder="Email"
+placeholder="EMAIL"
 type="email"
 name="email"
 errortext={errors.email}
@@ -45,11 +49,11 @@ onChange={onChange}
 value={user.email}
 />
 </div>
-
+<br/>
 
 <div className="field-line">
 <FormControl
-placeholder="Password"
+placeholder="PASSWORD"
 type="password"
 name="password"
 onChange={onChange}
@@ -57,27 +61,17 @@ errortext={errors.password}
 value={user.password}
 />
 </div>
-
-{/* < div className = "field-line" >
-<FormControl
-placeholder = "Phone"
-type = "phone"
-name = "phone"
-onChange = {onChange}
-errortext = {errors.phone}
-value = {user.phone}
-/> 
-</div> */}
-
-
+<br/>
 
 </form>
 </FormGroup>
 </Modal.Body>
 <Modal.Footer>
     <Button bsStyle="primary" type="submit">CREATE A NEW ACCOUNT</Button>
-   <Button bsStyle="default" active type="submit"><Link to={"/loginpage"}>Login</Link></Button>
-    <HelpBlock>Already have an account?</HelpBlock>    
+   <Button bsStyle="default" active type="submit"><Link to={"/loginpage"}>LOGIN</Link></Button>
+   <br/>
+  <br/>
+    <HelpBlock>Already have an account? Login here.</HelpBlock>    
 </Modal.Footer>
 
 
@@ -85,6 +79,7 @@ value = {user.phone}
 
 
 </Modal.Dialog>
+</div>
 </div>
 
 );
