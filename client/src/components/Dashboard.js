@@ -4,7 +4,7 @@ import React, {
 import Proptypes from "prop-types";
 import { Button} from "react-bootstrap";
 import Schedule from "../components/Schedule.js";
-// import LogoutFunction from "../pages/LogoutFunction.js";
+import LogoutFunction from "../pages/LogoutFunction.js";
 import {Link} from 'react-router-dom';
 import  Navbar  from "../components/Navbar.js";
 import Footer from "../components/Footer.js";

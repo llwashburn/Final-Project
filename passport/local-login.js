@@ -15,7 +15,8 @@ module.exports = new PassportLocalStrategy({
 }, (req, email, password, done) => {
     const userData = {
         email: email.trim(),
-        password: password.trim()
+        password: password.trim(),
+        
     };
 
     // find a user by email address
