@@ -24,6 +24,8 @@ class Contact extends Component {
       <br/>
       <br/>
       Thank you!
+      <br/>
+      <br/>
       <div id="signature">Elizabeth</div>
 
       

@@ -11,7 +11,7 @@ class Health extends Component {
       
       <Navbar/>
 
-      < hr className = "row featurette-divider"/>
+      <hr className = "row featurette-divider"/>
       <div className = "new-background" >
       <div className = "container" >
       <div className = "row featurette" >

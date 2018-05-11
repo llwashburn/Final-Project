@@ -43,15 +43,7 @@ const Navbar = props => (
 
                 <br/>
 
-                  {/* <li>
-                    <a href="https://www.facebook.com/groups/1700296396901242/" className="fa fa-facebook" aria-hidden="true"></a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/befueled4life/" className="fa fa-instagram" aria-hidden="true"></a>
-                  </li>
-                  <li>
-                    <a href="https://www.pinterest.com/isagenix" className="fa fa-pinterest" aria-hidden="true"></a>
-                  </li> */}
+                  
                 </ul>
               
           </nav>
