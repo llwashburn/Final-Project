@@ -1,88 +1,122 @@
-import React from "react";
+import React, {
+    Component
+} from "react";
 import Proptypes from "prop-types";
-import {   ButtonToolbar, Modal, Button, Form, FormControl} from "react-bootstrap";
+import { Button} from "react-bootstrap";
 import Schedule from "../components/Schedule.js";
-import LogoutFunction from "../pages/LogoutFunction.js";
+// import LogoutFunction from "../pages/LogoutFunction.js";
 import {Link} from 'react-router-dom';
+import  Navbar  from "../components/Navbar.js";
+import Footer from "../components/Footer.js";
+import LiabilityForm from "../components/LiabilityForm.js";
+import Payment from "../components/Payment.js";
 
 
 
 const Dashboard = ({ secretData, user}) => (
 
   
-    <div className ="container">
-<div className="w3-col l8 s12">
-  <div className="w3-card-4 w3-margin w3-white">
-    <div className="w3-container">
-      <h3><b>CLIENT PAGE</b></h3>
-      <h5>Welcome to your page!<span class="w3-opacity">Today's Date</span></h5>
-    </div>
+    <div>
+      <Navbar/>
 
-    <div className="w3-container">
-    <i class="fa fa-edit"></i>
-      <p>Please complete the following fields to update your profile</p>
-      <div className="w3-row">
-        <div className="w3-col m8 s12">
-          <p><button className="w3-button w3-padding-large w3-white w3-border"><b></b></button></p>
-        </div>
-        <div className="w3-col m4 w3-hide-small">
-          <p><span className="w3-padding-large w3-right"><b></b> <span class="w3-tag"></span></span></p>
-        </div>
-      </div>
-    </div>
-  </div>
+<div className="container">
+	<div className="row">
+        
+       <div className="col-md-7 ">
 
-
-
-
-
-  < div className = "w3-card-4 w3-margin w3-white" >
- <i class="fa fa-calendar-o" ></i>
-    <div className="w3-container">
-      <h3><b>FITNESS CLASS SIGNUP</b></h3>
-      <h5>Signup for a class Here <span class="w3-opacity"></span></h5>
-    </div>
-<Schedule/>
-    <div class="w3-container">
-      <p></p>
-      <div className="w3-row">
-        <div className="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b></b></button></p>
-        </div>
-        <div className="w3-col m4 w3-hide-small">
-          <p><span className="w3-padding-large w3-right"><b> </b> <span class="w3-badge"></span></span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-   <div className="w3-card-4 w3-margin w3-white">
-<i class="fa fa-money"></i>
-    <div className="w3-container">
-      <h3><b>PAY FOR A CLASS HERE</b></h3>
-      <h5>Pay for a class Here <span class="w3-opacity"></span></h5>
-    </div>
-
-    <div class="w3-container">
-      <p></p>
-      <div className="w3-row">
-        <div className="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b></b></button></p>
-        </div>
-        <div className="w3-col m4 w3-hide-small">
-          <p><span className="w3-padding-large w3-right"><b></b> <span class="w3-badge"></span></span></p>
-        </div>
-      </div>
-    </div>
-  </div> 
-
+<div className="panel panel-default">
+  <div className="panel-heading">  <h4 >User Profile</h4></div>
+   <div className="panel-body">
+       
+    <div className="box box-info">
+        
+            <div className="box-body">
+                     <div className="col-sm-6">
+                     <div  align="center"> <img alt="User Pic" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" id="profile-image1" className="img-circle img-responsive"/> 
+                
+                <input id="profile-image-upload" className="hidden" type="file"/>
+<div>click here to change profile image</div>
      
-        <Button href = "https://venmo.com/Leslie-Washburn-3">PAY HERE</Button>
-          <Link to ={"/logout"}><Button bsStyle="default" active type="submit">LOGOUT</Button></Link>
-      
+          </div>
+              <br/>
+    
+            </div>
+            <div className="col-sm-4">
+       <h4>User Name</h4>
+              <span><p>Fitness Client</p></span>            
+            </div>
+            <div className="clearfix"></div>
+           
+              
+<div className="col-sm-6 col-md-6 tital " >First Name:</div><div className="col-sm-7 col-xs-6 ">user name</div> <i className="fa fa-edit"></i>
+     <div className="clearfix"></div>
+<div className="bot-border"></div>
 
-  </div>
+< div className = "col-sm-6 col-md-6 tital " > Middle Name: </div><div className="col-sm-7"> incomplete</div><i className ="fa fa-edit"> </i>
+  <div className="clearfix"></div>
+<div className="bot-border"></div>
+
+< div className = "col-sm-6 col-sm-6 tital " > Last Name: </div><div className="col-sm-7"> incomplete</div > <i className="fa fa-edit"></i>
+  <div className="clearfix"></div>
+<div className="bot-border"></div>
+
+<div className="col-sm-5 col-md-6 tital " >Date Of Joining:</div><div className="col-sm-7">date account create</div> <i className="fa fa-edit"></i>
+
+  <div className="clearfix"></div>
+<div className="bot-border"></div>
+
+< div className = "col-sm-5 col-md-6 tital " > Date Of Birth: </div><div className="col-sm-7">incomplete</div > <i className="fa fa-edit"></i>
+
+  <div className="clearfix"></div>
+<div className="bot-border"></div>
+
+<div className="col-sm-5 col-md-6 tital " >Emergency Contact Name:</div><div className="col-sm-7">incomplete</div> <i className="fa fa-edit"></i>
+
+ <div className="clearfix"></div>
+<div className="bot-border"></div>
+
+<div className="col-sm-5 col-md-6 tital " >Emergency Contact Number:</div><div className="col-sm-7">incomplete</div> <i className="fa fa-edit"></i>
+
+<div className="clearfix"></div>
+<div className="bot-border"></div>
+
+<div className="col-sm-5 col-md-6 tital ">LIABILITY FORM:</div>
+<LiabilityForm/>
+
+ <div className="clearfix"></div>
+<div className="bot-border"></div>
+
+<div className="col-sm-5 col-md-6 tital">SCHEDULE A CLASS</div>
+<Schedule/>
+
+<div className="clearfix"></div>
+<div className="bot-border"></div>
+
+<div className="col-sm-5 col-md-6 tital">PAY FOR A CLASS</div>
+<Payment/>
+
+
+<div className="clearfix"></div>
+<div className="bot-border"></div>
+
+
+< div className = "bot-border" > </div>
+<Link to ={"/logout"}><Button bsStyle="default" active type="submit">LOGOUT</Button></Link>
+          
+          </div>
+        </div>    
+    </div> 
+    </div>
+</div>  
+    
+       
+   </div>
+
+
+       
+
+    </div>
+    <Footer/>
     </div>
 );
     Dashboard.Proptypes= {

@@ -140,6 +140,10 @@ div#signature{
     margin-left: 2%;
     line-height: 3.pt;
 }
+
+
+
+
 /* -------LOGIN FORM---------- */
 
 input.form-control{
@@ -201,6 +205,12 @@ div.testimonial {
     font-family: 'Rock Salt';
 }
 
+
+h2.text-center.featurette-heading{
+    font-family: 'Rock Salt',
+    cursive;
+    color: #ae0001;
+}
 /* PERSONAL WEBSITE CSS */
 
 body{
@@ -333,3 +343,26 @@ body{
 #footer a{
 	color: white;
 }
+
+/* DASHBOARD */
+  input.hidden {
+      position: absolute;
+      left: -9999px;
+  }
+
+  #profile-image1 {
+      cursor: pointer;
+      width: 100px;
+      height: 100px;
+      border: 2px solid #03b1ce;
+  }
+
+  .tital {
+      font-size: 16px;
+      font-weight: 500;
+  }
+
+  .bot-border {
+      border-bottom: 1px #f8f8f8 solid;
+      margin: 5px 0 5px 0
+  }

@@ -13,12 +13,10 @@ class Contact extends Component {
       <div>
       <Navbar />
       <hr className = "row featurette-divider"/>
-      <div className = "container">
+      <div className = "container"id ="contactbackground">
       <div className = "row featurette contact" >
-      {/* <div className = "col-md-5 col-md-push-5" > */}
-    
-      <h2 className = "featurette-heading" > Contact </h2>   
-      <p className = "lead" > If you would like to know more about Fuel 4 Life please send me an message through email or social media. 
+      <h2 className = "featurette-heading"> Contact </h2> 
+      <p className = "lead" > If you would like to know more about Fuel 4 Life please send me an message through email or social media.
       <br/>
       I will get back to you as soon as I can.
       <br/>
@@ -27,13 +25,12 @@ class Contact extends Component {
       <br/>
       <br/>
       <div id="signature">Elizabeth</div>
-
+</p>
       
-      </p>  
-      <div className = "col-md-5 col-md-pull-5">
+  
 
-      </div> 
       </div>
+     
       
     
       <Form/> 
