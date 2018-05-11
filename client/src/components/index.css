@@ -118,7 +118,7 @@ input {
    }
 
 input:hover {
-    background-color: #aaa;
+    background-color: #e8bf28;
 }
 
 input#message.form-control {

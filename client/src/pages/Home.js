@@ -13,7 +13,7 @@ import Footer from "../components/Footer.js";
 const Home = () => (
     <div>
       <Navbar/>
-      < Hero backgroundImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSxh4FlTPS1yQ5i6wrwWlnSc2VzOhaK5Q4ggQIl1q0M4pdZokteg" >
+      < Hero backgroundImage = "../../images/home.jpg">
         {/* <h1 id="welcome">Fuel 4 Life!</h1>
         <h2 id="welcome">Start your journey</h2>
        */}
