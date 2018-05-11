@@ -11,11 +11,8 @@ import Footer from "../components/Footer.js";
 import LiabilityForm from "../components/LiabilityForm.js";
 import Payment from "../components/Payment.js";
 
-
-
 const Dashboard = ({ secretData, user}) => (
-
-  
+ 
     <div>
       <Navbar/>
 
@@ -39,7 +36,6 @@ const Dashboard = ({ secretData, user}) => (
      
           </div>
               <br/>
-    
             </div>
             <div className="col-sm-4">
        <h4>User Name</h4>

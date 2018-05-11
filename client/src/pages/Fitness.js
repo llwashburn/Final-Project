@@ -23,17 +23,12 @@ class Fitness extends Component {
       </div>
       <div className = "col-md-6" >
       <img className = "picture-padding thumbnail featurette-image img-responsive center-block"
-      src = "https://fedweb-assets.s3.amazonaws.com/cache/fed-26/2/JCC%2520wellness%2520group%2520exercise1_resize762__1_1.jpg"
+      src="https://fedweb-assets.s3.amazonaws.com/cache/fed-26/2/JCC%2520wellness%2520group%2520exercise1_resize762__1_1.jpg"
       alt = "Generic placeholder image"/>
 
       </div>
       </div>
-      </div>
-      
-      
-    
-      
-
+      </div> 
       
       <div className = "new-background">
       <div className = "container">

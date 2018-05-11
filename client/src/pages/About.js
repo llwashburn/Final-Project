@@ -39,7 +39,7 @@ class About extends Component {
     <div className="col-md-5">
     < img className = "featurette-image img-fluid mx-auto"
     alt = "500x500 bio"
-    src = "https://s3.amazonaws.com/highfitness-media-library/wp-content/uploads/2016/07/29011354/Leslie-headshot-resize-e1499373479728-1.jpg"
+    src = "../../images/profile.jpeg"
     data-holder-render = "true" />
     </div>
     

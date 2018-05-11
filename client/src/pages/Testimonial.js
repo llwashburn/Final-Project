@@ -62,8 +62,8 @@ class Testimonial extends React.Component {
 
              <Panel.Heading>Cleaner Health</Panel.Heading>
              <Panel.Body>
-                "The IsaBody Challenge is all about the transformation not just the weight loss. I committed to adding nutritional cleansing 
-                to my lifestyle and cannot be more pleased with the results. Do it for your health! Join Fuel 4 Life today." 
+                "The IsaBody Challenge and Fuel Fitness is a perfect combination for me! It is all about the transformation not just the weight loss. I committed to adding nutritional cleansing 
+                to my lifestyle and cannot be more pleased with the results. Do it for your health! Contact Fuel 4 Life today." 
                 --Lori Dixon
              </Panel.Body>
                
@@ -73,10 +73,7 @@ class Testimonial extends React.Component {
 </div>
 </div>
 </div>
-
-
-
-                
+     
        
         <Footer/>
         </div>

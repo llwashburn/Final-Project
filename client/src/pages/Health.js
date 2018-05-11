@@ -29,7 +29,6 @@ class Health extends Component {
       </div> 
       </div>
 
-      
       <div className = "container">
       <div className = "row featurette">
       < div className = "col-sm-6" >
@@ -57,8 +56,6 @@ class Health extends Component {
       </div> 
       </div> 
      
-      
-
 
       <Footer/>
       </div>

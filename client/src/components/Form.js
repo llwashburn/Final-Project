@@ -11,7 +11,6 @@ class Form extends Component {
   };
 
   
-
   handleInputChange = event => {
     // Getting the value and name of the input which triggered the change
     const{name, value} = event.target;
