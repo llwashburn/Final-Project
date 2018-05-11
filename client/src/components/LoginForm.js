@@ -55,7 +55,7 @@ value = {user.password}
 </Modal.Body>
 
 <Modal.Footer>
-<Button bsstyle="primary" type="button" label="close">CLOSE</Button>
+<Link to={"/"}><Button bsstyle="primary" type="button" label="close">CLOSE</Button></Link>
 <Button bsstyle="primary" type="submit" label="login" onClick={onSubmit}>LOGIN</Button>
 <Link to={"/signUp"}><Button bstyle="primary" type="button" label="signup">SIGN UP</Button></Link>
 </Modal.Footer>

@@ -16,7 +16,7 @@ class Testimonial extends React.Component {
         < hr className = "row featurette-divider" />
         <div className = "container" >
           <div className = "row featurette" >
-         <h2 className = "text-center featurette-heading" >Some Kind Words</h2>
+         <h2 className = "text-center featurette-heading">Client Love and Testimonials</h2>
          <div className="testimonial">
          <Panel>
 
