@@ -55,8 +55,9 @@ value = {user.password}
 </Modal.Body>
 
 <Modal.Footer>
-<Button>CLOSE</Button>
-<Button bsStyle="large">LOGIN</Button>
+<Button bsStyle="large" type="submit" label="login">CLOSE</Button>
+<Button bsStyle="large" type="submit" label="login">LOGIN</Button>
+<Button bStyle="large" type="submit" label="login" >SIGN UP</Button>
 </Modal.Footer>
 </Modal.Dialog>
 </div>

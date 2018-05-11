@@ -1,4 +1,4 @@
 {
-    "dbUri": "mongodb://localhost/react_passport",
+    "dbUri": "mongodb://heroku_xsxsxlz6:vpaic987h0s35u4i20bj67d8i@ds119640.mlab.com:19640/heroku_xsxsxlz6",
     "jwtSecret": "a secret phrase!!"
 }
