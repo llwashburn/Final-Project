@@ -25,19 +25,22 @@ class About extends Component {
         My goal is to educate, support and empower everyone I work with!I will provide all the motivation and information you need to create a wellness plan that works
         for your lifestyle.
 
-        I am committed to helping people realize their own potential and achieve vibrant health!I take an integrative approach to wellness, with a comprehensive focus on nutrition, emotional balance, natural ways to relieve stress, and customized programs to support optimal health and well - being.
+        I am committed to helping people realize their own potential and achieve vibrant health! I take an integrative approach to wellness, with a comprehensive focus on nutrition, emotional balance, natural ways to relieve stress, and customized programs to support optimal health and well - being.
 
         Contact me today to schedule your COMPLIMENTARY CONSULTATION and
-        let 's get started! During this 30 minute phone session, I will answer all your questions and we will discuss how I can best support your goals.
+        let's get started! During this 30 minute phone session, I will answer all your questions and we will discuss how I can best support your goals.
 <br/>
 <br/>
-         Elizabeth Ricks is a certified Fitness Coach, she graduated from Winthrop University with a B.S.in Physical Education.
-         Ricks is the founder of Fuel 4 Life, formly known as PE4Moms, a nutrition consultant with Isagenix and the coordinator
+         Elizabeth Ricks is a certified Fitness Coach, she graduated from Winthrop University with a B.S. in Physical Education.
+         Ricks is the founder of Fuel 4 Life, formly known as PE4Moms, a trained nutritional consultant with Isagenix and the coordinator
          for LiveStrong Coastal Georgia.
     </p>
     </div>
     <div className="col-md-5">
-    <img className="featurette-image img-fluid mx-auto" alt ="500x500 bio" src="https://images.pexels.com/photos/34669/exercise-weight-woman-sport.jpg?auto=compress&cs=tinysrgb&h=350"data-holder-render="true"/>
+    < img className = "featurette-image img-fluid mx-auto"
+    alt = "500x500 bio"
+    src = "https://s3.amazonaws.com/highfitness-media-library/wp-content/uploads/2016/07/29011354/Leslie-headshot-resize-e1499373479728-1.jpg"
+    data-holder-render = "true" />
     </div>
     
    

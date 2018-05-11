@@ -17,6 +17,7 @@ class Testimonial extends React.Component {
         <div className = "container" >
           <div className = "row featurette" >
          <h2 className = "text-center featurette-heading">Client Love and Testimonials</h2>
+         <br/>
          <div className="testimonial">
          <Panel>
 
@@ -72,14 +73,14 @@ class Testimonial extends React.Component {
 </div>
 </div>
 </div>
-</div>
 
 
-                );
-        <div>
+
+                
+       
         <Footer/>
         </div>
-        
+    );    
    
     
   }
