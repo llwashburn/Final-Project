@@ -26,7 +26,7 @@ const LoginForm = ({
 
 <Modal.Body>
 <FormGroup>
-    <form action = "/"onSubmit = {onSubmit}>
+    <form action = "/">
     {successMessage && < p className = "success-message" > {successMessage} </p>} 
     {errors.summary && < p className = "error-message" > {errors.summary} </p>}
 
@@ -55,14 +55,14 @@ value = {user.password}
 </Modal.Body>
 
 <Modal.Footer>
-<Button bsStyle="large" type="submit" label="login">CLOSE</Button>
-<Button bsStyle="large" type="submit" label="login">LOGIN</Button>
-<Button bStyle="large" type="submit" label="login" >SIGN UP</Button>
+<Button bsstyle="primary" type="button" label="close">CLOSE</Button>
+<Button bsstyle="primary" type="submit" label="login" onClick={onSubmit}>LOGIN</Button>
+<Link to={"/signUp"}><Button bstyle="primary" type="button" label="signup">SIGN UP</Button></Link>
 </Modal.Footer>
 </Modal.Dialog>
 </div>
 
-
+ 
 
 
 </div>

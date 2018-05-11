@@ -27,7 +27,6 @@ class SignUpPage extends React.Component {
     processForm = event => {
         // prevent default action. in this case, action is the form submission event
         event.preventDefault();
-
         // create a string for an HTTP body message
         const {
             name,

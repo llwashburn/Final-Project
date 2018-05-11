@@ -26,7 +26,7 @@ const SignUpForm = ({
 <Modal.Body>
 
 <FormGroup>
-<form action="/" onSubmit={onSubmit}>
+<form action="/">
 {errors.summary && <p className="error-message">{errors.summary}</p>}
 <div className="field-line">
 <FormControl
@@ -67,18 +67,15 @@ value={user.password}
 </FormGroup>
 </Modal.Body>
 <Modal.Footer>
-    <Button bsStyle="primary" type="submit">CREATE A NEW ACCOUNT</Button>
-   <Button bsStyle="default" active type="submit"><Link to={"/loginpage"}>LOGIN</Link></Button>
+    <Button bsStyle="primary" type="submit"  onClick={onSubmit}>CREATE A NEW ACCOUNT</Button>
+   <Link to ={"/login"}><Button bsStyle="default" active type="submit">LOGIN</Button></Link>
    <br/>
   <br/>
     <HelpBlock>Already have an account? Login here.</HelpBlock>    
 </Modal.Footer>
 
-
-
-
-
 </Modal.Dialog>
+
 </div>
 </div>
 
