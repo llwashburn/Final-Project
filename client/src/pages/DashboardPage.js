@@ -17,6 +17,7 @@ class DashboardPage extends React.Component {
         componentDidMount() {
             API.dashboard(Auth.getToken())
                 .then(res => {
+                    console.log('hit here')
                     this.setState({
                         secretData: res.data.message,
                         user: res.data.user
@@ -28,13 +29,10 @@ class DashboardPage extends React.Component {
          * Render the component.
          */
         render() {
-            return ( < Dashboard secretData = {
-                    this.state.secretData
-                }
-                user = {
-                    this.state.user
-                }
-                />);
+            return ( <Dashboard 
+                        secretData= {this.state.secretData}
+                        user={this.state.user}
+                    />);
             }
 
         }

@@ -52,9 +52,9 @@ processForm = event => {
 
         //redirect signed in user to dashboard
         this.props.history.push("/dashboard");
-        // this.setState({
-        //     error: {}
-        // });
+        this.setState({
+            error: {}
+        });
     })
     .catch( ({response}) => {
         console.log('error', response)

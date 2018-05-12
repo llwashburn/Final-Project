@@ -33,8 +33,8 @@ class Health extends Component {
       <div className = "row featurette">
       < div className = "col-sm-6" >
       < img className = "picture-padding thumbnail margin-center featurette-image img-responsive center-block"
-      src = "http://www.isagenixhealth.net/wp-content/uploads/2016/08/DFShakeSpread640x400.jpg"
-      alt = "Generic placeholder image" />
+      src = ".. / .. /images/shake.jpg"
+      alt = "Generic placeholder image"/>
       </div>
       
        < div className = "col-md-6" >

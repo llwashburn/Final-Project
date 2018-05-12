@@ -8,18 +8,13 @@ import {
 const PrivateRoute = ({
     component: Component,
     ...rest
-}) => ( <
-    Route { ...rest
-    }
+}) => ( <Route { ...rest }
     render = {
         props => (
-            Auth.isUserAuthenticated() ? ( <
-                Component { ...props
-                } { ...rest
-                }
+            Auth.isUserAuthenticated() ? ( 
+                <Component { ...props } { ...rest }
                 />
-            ) : ( <
-                Redirect to = {
+            ) : ( <Redirect to = {
                     {
                         pathname: '/',
                         state: {
@@ -37,13 +32,11 @@ const PrivateRoute = ({
 const LoggedOutRoute = ({
     component: Component,
     ...rest
-}) => ( <
-    Route { ...rest
-    }
+}) => ( <Route { ...rest }
     render = {
         props => (
-            Auth.isUserAuthenticated() ? ( <
-                Redirect to = {
+            Auth.isUserAuthenticated() ? ( 
+                <Redirect to = {
                     {
                         pathname: '/dashboard',
                         state: {
@@ -52,10 +45,8 @@ const LoggedOutRoute = ({
                     }
                 }
                 />
-            ) : ( <
-                Component { ...props
-                } { ...rest
-                }
+            ) : ( 
+                <Component { ...props } { ...rest }
                 />
             )
         )

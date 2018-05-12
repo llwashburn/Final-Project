@@ -4,7 +4,6 @@ import React, {
 import Proptypes from "prop-types";
 import { Button} from "react-bootstrap";
 import Schedule from "../components/Schedule.js";
-import LogoutFunction from "../pages/LogoutFunction.js";
 import {Link} from 'react-router-dom';
 import  Navbar  from "../components/Navbar.js";
 import Footer from "../components/Footer.js";
@@ -17,9 +16,8 @@ const Dashboard = ({ secretData, user}) => (
       <Navbar/>
 
 <div className="container">
-	<div className="row">
-        
-       <div className="col-md-7 ">
+	<div className="row"> 
+  <div className="col-md-7 ">
 
 <div className="panel panel-default">
   <div className="panel-heading">  <h4 >User Profile</h4></div>
@@ -28,13 +26,13 @@ const Dashboard = ({ secretData, user}) => (
     <div className="box box-info">
         
             <div className="box-body">
-                     <div className="col-sm-6">
-                     <div  align="center"> <img alt="User Pic" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" id="profile-image1" className="img-circle img-responsive"/> 
+            <div className="col-sm-6">
+              <div  align="center"> <img alt="User Pic" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" id="profile-image1" className="img-circle img-responsive"/> 
                 
                 <input id="profile-image-upload" className="hidden" type="file"/>
-<div>click here to change profile image</div>
+                <div>click here to change profile image</div>
      
-          </div>
+              </div>
               <br/>
             </div>
             <div className="col-sm-4">
@@ -44,24 +42,24 @@ const Dashboard = ({ secretData, user}) => (
             <div className="clearfix"></div>
            
               
-<div className="col-sm-6 col-md-6 tital " >First Name:</div><div className="col-sm-7 col-xs-6 ">user name</div> <i className="fa fa-edit"></i>
+<div className="col-sm-6 col-md-6 tital ">First Name:</div><div className="col-sm-7 col-xs-6 ">user name</div> <i className="fa fa-edit"></i>
      <div className="clearfix"></div>
 <div className="bot-border"></div>
 
-< div className = "col-sm-6 col-md-6 tital " > Middle Name: </div><div className="col-sm-7"> incomplete</div><i className ="fa fa-edit"> </i>
+< div className = "col-sm-6 col-md-6 tital "> Middle Name: </div><div className="col-sm-7"> incomplete</div><i className ="fa fa-edit"> </i>
   <div className="clearfix"></div>
 <div className="bot-border"></div>
 
-< div className = "col-sm-6 col-sm-6 tital " > Last Name: </div><div className="col-sm-7"> incomplete</div > <i className="fa fa-edit"></i>
+< div className = "col-sm-6 col-sm-6 tital "> Last Name: </div><div className="col-sm-7"> incomplete</div > <i className="fa fa-edit"></i>
   <div className="clearfix"></div>
 <div className="bot-border"></div>
 
-<div className="col-sm-5 col-md-6 tital " >Date Of Joining:</div><div className="col-sm-7">date account create</div> <i className="fa fa-edit"></i>
+<div className="col-sm-5 col-md-6 tital ">Date Of Joining:</div><div className="col-sm-7">date account create</div> <i className="fa fa-edit"></i>
 
   <div className="clearfix"></div>
 <div className="bot-border"></div>
 
-< div className = "col-sm-5 col-md-6 tital " > Date Of Birth: </div><div className="col-sm-7">incomplete</div > <i className="fa fa-edit"></i>
+< div className = "col-sm-5 col-md-6 tital "> Date Of Birth: </div><div className="col-sm-7">incomplete</div > <i className="fa fa-edit"></i>
 
   <div className="clearfix"></div>
 <div className="bot-border"></div>
@@ -89,7 +87,7 @@ const Dashboard = ({ secretData, user}) => (
 <div className="bot-border"></div>
 
 <div className="col-sm-5 col-md-6 tital">PAY FOR A CLASS</div>
-<Payment/>
+{/* <Payment/> */}
 
 
 <div className="clearfix"></div>
@@ -104,20 +102,12 @@ const Dashboard = ({ secretData, user}) => (
     </div> 
     </div>
 </div>  
-    
-       
    </div>
-
-
-       
-
     </div>
     <Footer/>
     </div>
 );
-    Dashboard.Proptypes= {
-        secretData: Proptypes.string.isRequired
-};
+    
 
 
 export default Dashboard;

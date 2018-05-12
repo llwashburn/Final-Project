@@ -47,15 +47,10 @@ toggleAuthenticateStatus = () => {
           <Route path="/health" component={Health} />
           <Route path="/contact" component={Contact} />
           <Route path="/testimonial" component={Testimonal} />
-          {/* <Route path="/loginpage" component={LoginPage}/> */}
-          {/* <Route path="/signup" component={SignUpPage}/> */}
-
-{/* <PropsRoute exactpath="/"component={ProfilePage} toggleAuthenticateStatus={this.toggleAuthenticateStatus}/> */}
-<PrivateRoute path="/dashboard" component={DashboardPage}/>
-<LoggedOutRoute path="/loginpage" component={LoginPage} toggleAuthenticateStatus={this.toggleAuthenticateStatus} />
-<LoggedOutRoute path="/signup" component={SignUpPage}/>
-<Route path="/logout" component={LogoutFunction}/>
-
+          <PrivateRoute path="/dashboard" component={DashboardPage}/>
+          <LoggedOutRoute path="/loginpage" component={LoginPage} toggleAuthenticateStatus={this.toggleAuthenticateStatus} />
+          <LoggedOutRoute path="/signup" component={SignUpPage}/>
+          <Route path="/logout" component={LogoutFunction}/>
         </div>
       </Router>;
   }
