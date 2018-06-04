@@ -25,7 +25,7 @@ hr.row.featurette-divider{
 
 /* -------JUMBOTRON---------- */
 div.Jumbtron {
-    opacity: 0.6;
+    /* opacity: 0.6; */
     height: 5px;
 }
 
